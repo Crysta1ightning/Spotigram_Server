@@ -11,65 +11,120 @@ const schemaSql = `
     CREATE EXTENSION IF NOT EXISTS pg_trgm;
 
     -- Drop (droppable only when no dependency)
-    DROP INDEX IF EXISTS posts_idx_text;
-    DROP INDEX IF EXISTS posts_idx_ts;
-    DROP TABLE IF EXISTS posts;
-    DROP INDEX IF EXISTS todos_idx_text;
-    DROP INDEX IF EXISTS todos_idx_ts;
-    DROP TABLE IF EXISTS todos;
-    DROP TYPE IF EXISTS mood;
+    DROP TABLE IF EXISTS users;
+    DROP TABLE IF EXISTS songs;
+    DROP TABLE IF EXISTS friends;
+    DROP TABLE IF EXISTS timelines;
+    DROP TABLE IF EXISTS playlists;
+    DROP TABLE IF EXISTS playlists_owners;
+    DROP TABLE IF EXISTS playlists_songs;
 
     -- Create
-    CREATE TYPE mood AS ENUM (
-        'Clear',
-        'Clouds',
-        'Drizzle',
-        'Rain',
-        'Thunder',
-        'Snow',
-        'Windy'
-    );
-    CREATE TABLE posts (
-        id              serial PRIMARY KEY NOT NULL,
-        mood            mood NOT NULL,
-        text            text NOT NULL,
-        ts              bigint NOT NULL DEFAULT (extract(epoch from now())),
-        "clearVotes"    integer NOT NULL DEFAULT 0,
-        "cloudsVotes"   integer NOT NULL DEFAULT 0,
-        "drizzleVotes"  integer NOT NULL DEFAULT 0,
-        "rainVotes"     integer NOT NULL DEFAULT 0,
-        "thunderVotes"  integer NOT NULL DEFAULT 0,
-        "snowVotes"     integer NOT NULL DEFAULT 0,
-        "windyVotes"    integer NOT NULL DEFAULT 0
+    CREATE TABLE users (
+        user_id              serial PRIMARY KEY NOT NULL,
+        username             text NOT NULL,
+        password             text NOT NULL
     );
 
-    CREATE TABLE todos (
-        id          serial PRIMARY KEY NOT NULL,
-        mood        mood NOT NULL,
-        text        text NOT NULL,
-        ts          bigint NOT NULL DEFAULT (extract(epoch from now())),
-        "doneTs"    integer DEFAULT 0
+    CREATE TABLE songs (
+        song_id              serial PRIMARY KEY NOT NULL,
+        songname             text NOT NULL,
+        artist               text NOT NULL
     );
-    CREATE INDEX posts_idx_ts ON posts USING btree(ts);
-    CREATE INDEX posts_idx_text ON posts USING gin(text gin_trgm_ops);
-    CREATE INDEX todos_idx_ts ON todos USING btree(ts);
-    CREATE INDEX todos_idx_text ON todos USING gin(text gin_trgm_ops);
+
+    CREATE TABLE friends (
+        friend_id            serial PRIMARY KEY NOT NULL,
+        user1_id             integer NOT NULL,
+        user2_id             integer NOT NULL
+    );
+
+    CREATE TABLE timelines (
+        timeline_id          serial PRIMARY KEY NOT NULL,
+        user_id              integer NOT NULL,
+        song_id              integer NOT NULL,
+        timestamp            integer NOT NULL
+    );
+
+    CREATE TABLE playlists (
+        playlist_id          serial PRIMARY KEY NOT NULL,
+        playlistname         text NOT NULL
+    );
+
+    CREATE TABLE playlists_owners (
+        playlists_owners_id  serial PRIMARY KEY NOT NULL,
+        playlist_id          integer NOT NULL,
+        user_id              integer NOT NULL
+    );
+
+    CREATE TABLE playlists_songs (
+        playlists_songs_id   serial PRIMARY KEY NOT NULL,
+        playlist_id          integer NOT NULL,
+        song_id              integer NOT NULL
+    );
 `;
 
 const dataSql = `
-    -- Populate dummy posts
-    INSERT INTO posts (mood, text)
-    SELECT
-        'Clear',
-        'word' || i || ' word' || (i+1) || ' word' || (i+2)
-    FROM generate_series(1, 100) AS s(i);
+    -- Populate dummy users
+    INSERT INTO users (username, password)
+    VALUES ('Crystal', '0000');
+    INSERT INTO users (username, password)
+    VALUES ('Kelvin', '1234');
+    INSERT INTO users (username, password)
+    VALUES ('li3', '1133');
 
-    -- Populate dummy todos
-    INSERT INTO todos (mood, text)
-    SELECT
-        'Clear',
-        'Lab' || (i-1) || ' todos' || (i+1)
-    FROM generate_series(1, 100) AS s(i);
+    -- Populate dummy songs
+    INSERT INTO songs (songname, artist)
+    VALUES ('Anaconda', 'Nicki Minaj');
+    INSERT INTO songs (songname, artist)
+    VALUES ('Side by Side', 'Ariana Grande');
+    INSERT INTO songs (songname, artist)
+    VALUES ('Lemon', '米津玄師');
+    INSERT INTO songs (songname, artist)
+    VALUES ('Night Dancer', 'Imase');
+
+    -- Populate dummy friends
+    INSERT INTO friends (user1_id, user2_id)
+    VALUES (1, 2);
+    INSERT INTO friends (user1_id, user2_id)
+    VALUES (2, 1);
+    INSERT INTO friends (user1_id, user2_id)
+    VALUES (1, 3);
+    INSERT INTO friends (user1_id, user2_id)
+    VALUES (3, 1);
+
+    -- Populate dummy timelines
+    INSERT INTO timelines (user_id, song_id, timestamp)
+    VALUES (1, 2, 50000);
+    INSERT INTO timelines (user_id, song_id, timestamp)
+    VALUES (2, 1, 52000);
+    INSERT INTO timelines (user_id, song_id, timestamp)
+    VALUES (1, 3, 54000);
+    INSERT INTO timelines (user_id, song_id, timestamp)
+    VALUES (3, 1, 58000);
+
+    -- Populate dummy playlists
+    INSERT INTO playlists (playlistname)
+    VALUES ('西洋音樂');
+    INSERT INTO playlists (playlistname)
+    VALUES ('東洋音樂');
+    
+    -- Populate dummy playlists_owners
+    INSERT INTO playlists_owners (playlist_id, user_id)
+    VALUES (1, 1);
+    INSERT INTO playlists_owners (playlist_id, user_id)
+    VALUES (1, 2);
+    INSERT INTO playlists_owners (playlist_id, user_id)
+    VALUES (2, 3);
+
+    -- Populate dummy playlists_songss
+    INSERT INTO playlists_songs (playlist_id, song_id)
+    VALUES (1, 1);
+    INSERT INTO playlists_songs (playlist_id, song_id)
+    VALUES (1, 2);
+    INSERT INTO playlists_songs (playlist_id, song_id)
+    VALUES (2, 3);
+    INSERT INTO playlists_songs (playlist_id, song_id)
+    VALUES (2, 4);
 `;
 
 db.none(schemaSql)
