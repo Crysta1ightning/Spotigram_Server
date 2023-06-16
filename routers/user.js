@@ -9,7 +9,7 @@ const router = express.Router();
 
 router.use(express.json());
 router.get('/', function(req, res) {
-    res.json("Hello World!");
+    res.json("Get User Here~");
 })
 // // List
 // router.get('/', function (req, res, next) {
