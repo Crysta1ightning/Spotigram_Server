@@ -71,6 +71,10 @@ const dataSql = `
     VALUES ('Kelvin', '1234');
     INSERT INTO users (username, password)
     VALUES ('li3', '1133');
+    INSERT INTO users (username, password)
+    VALUES ('Cody', '7777');
+    INSERT INTO users (username, password)
+    VALUES ('Nevkiw', '64564');
 
     -- Populate dummy songs
     INSERT INTO songs (songname, artist)
@@ -86,11 +90,11 @@ const dataSql = `
     INSERT INTO friends (user1_id, user2_id)
     VALUES (1, 2);
     INSERT INTO friends (user1_id, user2_id)
-    VALUES (2, 1);
-    INSERT INTO friends (user1_id, user2_id)
-    VALUES (1, 3);
+    VALUES (2, 3);
     INSERT INTO friends (user1_id, user2_id)
     VALUES (3, 1);
+    INSERT INTO friends (user1_id, user2_id)
+    VALUES (4, 5);
 
     -- Populate dummy timelines
     INSERT INTO timelines (user_id, song_id, timestamp)

@@ -32,7 +32,7 @@ router.post('/', function (req, res, next) {
         res.json(playlists);
       })
       .catch(next);
-  });
+});
   
 
 module.exports = router;
