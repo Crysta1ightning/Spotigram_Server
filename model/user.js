@@ -6,7 +6,7 @@ if (!global.db) {
   
   function list() {
     const sql = `
-          SELECT *
+          SELECT user_id, username
           FROM users
       `;
     return db.any(sql);

@@ -22,6 +22,7 @@ router.get('/', function (req, res, next) {
 // Create
 router.post('/', function (req, res, next) {
   const { username, encoded_pwd } = req.body;
+  console.log(req.body);
   if (!username || !encoded_pwd) {
     const err = new Error('username and encoded_pwd are required');
     err.status = 400;
