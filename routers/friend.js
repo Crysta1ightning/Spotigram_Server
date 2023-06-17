@@ -20,20 +20,20 @@ router.get('/', function (req, res, next) {
 });
 
 // Create
-// router.post('/', function (req, res, next) {
-//     const { playlistname } = req.body;
-//     if (!playlistname) {
-//       const err = new Error('playlistname is required');
-//       err.status = 400;
-//       throw err;
-//     }
-//     playlistModel
-//       .create(playlistname)
-//       .then((playlists) => {
-//         res.json(playlists);
-//       })
-//       .catch(next);
-// });
+router.post('/', function (req, res, next) {
+    const { user1_id, user2_id } = req.body;
+    if (!user1_id || !user2_id) {
+      const err = new Error('user1_id and user2_id is required');
+      err.status = 400;
+      throw err;
+    }
+    friendModel
+      .create(user1_id, user2_id)
+      .then((friends) => {
+        res.json(friends);
+      })
+      .catch(next);
+});
   
 
 module.exports = router;

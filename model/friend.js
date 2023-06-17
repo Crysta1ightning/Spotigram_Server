@@ -16,6 +16,16 @@ function list(user_id) {
     return db.any(sql, [user_id]);
 }
 
+function create(user1_id, user2_id) {
+    const sql = `
+          INSERT INTO friends (user1_id, user2_id)
+          VALUES ($<user1_id>, $<user2_id>)
+          RETURNING *
+      `;
+    return db.one(sql, {user1_id, user2_id});
+  }
+
 module.exports = {
     list,
+    create
 };
