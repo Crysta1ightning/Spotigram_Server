@@ -26,3 +26,13 @@
     at Database.<anonymous> (C:\Users\Cody Chiu\ss-demo\final project\Spotigram_Server\node_modules\pg-promise\lib\query.js:277:23)
     at C:\Users\Cody Chiu\ss-demo\final project\Spotigram_Server\node_modules\pg-promise\lib\database.js:333:42
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
+1687093226 ERROR  error: column "profile_pic" does not exist
+    at Parser.parseErrorMessage (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\parser.js:287:98)
+    at Parser.handlePacket (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\parser.js:126:29)
+    at Parser.parse (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\parser.js:39:38)
+    at Socket.<anonymous> (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
