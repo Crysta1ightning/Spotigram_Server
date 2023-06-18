@@ -65,7 +65,8 @@ const schemaSql = `
     );
 
     CREATE TABLE story (
-        stories_id   serial PRIMARY KEY NOT NULL,
+        stories_id           serial PRIMARY KEY NOT NULL,
+        user_id              integer NOT NULL,
         song_id              integer NOT NULL
     );
 `;
@@ -136,6 +137,12 @@ const dataSql = `
     VALUES (2, 3);
     INSERT INTO playlists_songs (playlist_id, song_id)
     VALUES (2, 4);
+
+    -- Populate dummy playlists_songss
+    INSERT INTO playlists_songs (user_id, song_id)
+    VALUES (2, 1);
+    INSERT INTO playlists_songs (user_id, song_id)
+    VALUES (3, 2);
 `;
 
 db.none(schemaSql)
