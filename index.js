@@ -27,6 +27,8 @@ app.use('/api/song', songRouter);
 app.use('/api/playlist', playlistRouter);
 app.use('/api/friend', friendRouter);
 app.use('/api/story', storyRouter);
+app.use('/api/playlist_song', playlist_songRouter);
+app.use('/api/playlist_owner', playlist_ownerRouter);
 app.use('/api/timeline', timelineRouter);
 // app.get('/*', (req, res) => res.redirect('/'));
 app.use(errorHandler);
