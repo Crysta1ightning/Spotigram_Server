@@ -16,13 +16,23 @@ if (!global.db) {
     const sql = `
           INSERT INTO users (username, password)
           VALUES ($<username>, $<encoded_pwd>)
-          RETURNING *
+          RETURNING (user_id)
       `;
     return db.one(sql, {username, encoded_pwd});
+  }
+
+  function login(username, encoded_pwd) {
+    const sql = `
+          SELECT user_id
+          FROM users
+          WHERE username='$1:value' AND password='$2:value'
+      `;
+    return db.any(sql, [username, encoded_pwd]);
   }
   
   module.exports = {
     list,
     create,
+    login
   };
   
