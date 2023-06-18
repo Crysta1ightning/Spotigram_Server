@@ -73,15 +73,15 @@ const schemaSql = `
 const dataSql = `
     -- Populate dummy users
     INSERT INTO users (username, password, profile_pic)
-    VALUES ('Crystal', '0000', 'images/user_pfp1.png');
+    VALUES ('Crystal', '0000', 'images/user_pfp1.jpg');
     INSERT INTO users (username, password, profile_pic)
-    VALUES ('Kelvin', '1234', 'images/user_pfp1.png');
+    VALUES ('Kelvin', '1234', 'images/user_pfp1.jpg');
     INSERT INTO users (username, password, profile_pic)
-    VALUES ('li3', '1133', 'images/user_pfp1.png');
+    VALUES ('li3', '1133', 'images/user_pfp1.jpg');
     INSERT INTO users (username, password, profile_pic)
-    VALUES ('Cody', '7777', 'images/user_pfp1.png');
+    VALUES ('Cody', '7777', 'images/user_pfp1.jpg');
     INSERT INTO users (username, password, profile_pic)
-    VALUES ('Nevkiw', '64564', 'images/user_pfp1.png');
+    VALUES ('Nevkiw', '64564', 'images/user_pfp1.jpg');
 
     -- Populate dummy songs
     INSERT INTO songs (songname, artist)
