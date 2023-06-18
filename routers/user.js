@@ -36,4 +36,20 @@ router.post('/', function (req, res, next) {
     .catch(next);
 });
 
+// Login
+router.get('/login/:username/:encoded_pwd', function (req, res, next) {
+  const {username, encoded_pwd} = req.params;
+  if (!username || !encoded_pwd) {
+    const err = new Error('username and encoded_pwd are required');
+    err.status = 400;
+    throw err;
+  }
+  userModel
+    .login(username, encoded_pwd)
+    .then((users) => {
+      res.json(users);
+    })
+    .catch(next);
+});
+
 module.exports = router;
