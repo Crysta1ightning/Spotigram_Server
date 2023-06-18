@@ -8,6 +8,7 @@ const friendRouter = require('./routers/friend.js');
 const storyRouter = require('./routers/story.js');
 const errorHandler = require('./middleware/error-handler.js');
 const accessController = require('./middleware/access-controller.js');
+const timelineRouter = require('./routers/timeline.js');
 
 const app = express();
 
@@ -24,6 +25,7 @@ app.use('/api/song', songRouter);
 app.use('/api/playlist', playlistRouter);
 app.use('/api/friend', friendRouter);
 app.use('/api/story', storyRouter);
+app.use('/api/timeline', timelineRouter);
 // app.get('/*', (req, res) => res.redirect('/'));
 app.use(errorHandler);
 
