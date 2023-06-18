@@ -18,12 +18,14 @@ const schemaSql = `
     DROP TABLE IF EXISTS playlists;
     DROP TABLE IF EXISTS playlists_owners;
     DROP TABLE IF EXISTS playlists_songs;
+    DROP TABLE IF EXISTS story;
 
     -- Create
     CREATE TABLE users (
         user_id              serial PRIMARY KEY NOT NULL,
         username             text NOT NULL,
-        password             text NOT NULL
+        password             text NOT NULL,
+        profile_pic          text NOT NULL
     );
 
     CREATE TABLE songs (
@@ -61,20 +63,25 @@ const schemaSql = `
         playlist_id          integer NOT NULL,
         song_id              integer NOT NULL
     );
+
+    CREATE TABLE story (
+        stories_id   serial PRIMARY KEY NOT NULL,
+        song_id              integer NOT NULL
+    );
 `;
 
 const dataSql = `
     -- Populate dummy users
-    INSERT INTO users (username, password)
-    VALUES ('Crystal', '0000');
-    INSERT INTO users (username, password)
-    VALUES ('Kelvin', '1234');
-    INSERT INTO users (username, password)
-    VALUES ('li3', '1133');
-    INSERT INTO users (username, password)
-    VALUES ('Cody', '7777');
-    INSERT INTO users (username, password)
-    VALUES ('Nevkiw', '64564');
+    INSERT INTO users (username, password, profile_pic)
+    VALUES ('Crystal', '0000', 'images/user_pfp1.png');
+    INSERT INTO users (username, password, profile_pic)
+    VALUES ('Kelvin', '1234', 'images/user_pfp1.png');
+    INSERT INTO users (username, password, profile_pic)
+    VALUES ('li3', '1133', 'images/user_pfp1.png');
+    INSERT INTO users (username, password, profile_pic)
+    VALUES ('Cody', '7777', 'images/user_pfp1.png');
+    INSERT INTO users (username, password, profile_pic)
+    VALUES ('Nevkiw', '64564', 'images/user_pfp1.png');
 
     -- Populate dummy songs
     INSERT INTO songs (songname, artist)
