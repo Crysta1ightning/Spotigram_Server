@@ -18,21 +18,19 @@ const schemaSql = `
     DROP TABLE IF EXISTS playlists;
     DROP TABLE IF EXISTS playlists_owners;
     DROP TABLE IF EXISTS playlists_songs;
-    DROP TABLE IF EXISTS story;
+    DROP TABLE IF EXISTS stories;
 
     -- Create
     CREATE TABLE users (
         user_id              serial PRIMARY KEY NOT NULL,
         username             text NOT NULL,
-        password             text NOT NULL,
-        profile_pic          text NOT NULL
+        password             text NOT NULL
     );
 
     CREATE TABLE songs (
         song_id              serial PRIMARY KEY NOT NULL,
         songname             text NOT NULL,
-        artist               text NOT NULL,
-        cover                text NOT NULL
+        artist               text NOT NULL
     );
 
     CREATE TABLE friends (
@@ -45,7 +43,7 @@ const schemaSql = `
         timeline_id          serial PRIMARY KEY NOT NULL,
         user_id              integer NOT NULL,
         song_id              integer NOT NULL,
-        timestamp            integer NOT NULL
+        ts                   bigint NOT NULL
     );
 
     CREATE TABLE playlists (
@@ -65,35 +63,38 @@ const schemaSql = `
         song_id              integer NOT NULL
     );
 
-    CREATE TABLE story (
+    CREATE TABLE stories (
         stories_id           serial PRIMARY KEY NOT NULL,
         user_id              integer NOT NULL,
-        song_id              integer NOT NULL
+        song_id              integer NOT NULL,
+        ts                   bigint NOT NULL
     );
 `;
 
+
+
 const dataSql = `
     -- Populate dummy users
-    INSERT INTO users (username, password, profile_pic)
-    VALUES ('Crystal', '0000', 'images/user_pfp1.jpg');
-    INSERT INTO users (username, password, profile_pic)
-    VALUES ('Kelvin', '1234', 'images/user_pfp1.jpg');
-    INSERT INTO users (username, password, profile_pic)
-    VALUES ('li3', '1133', 'images/user_pfp1.jpg');
-    INSERT INTO users (username, password, profile_pic)
-    VALUES ('Cody', '7777', 'images/user_pfp1.jpg');
-    INSERT INTO users (username, password, profile_pic)
-    VALUES ('Nevkiw', '64564', 'images/user_pfp1.jpg');
+    INSERT INTO users (username, password)
+    VALUES ('Crystal', '0000');
+    INSERT INTO users (username, password)
+    VALUES ('Kelvin', '1234');
+    INSERT INTO users (username, password)
+    VALUES ('li3', '1133');
+    INSERT INTO users (username, password)
+    VALUES ('Cody', '7777');
+    INSERT INTO users (username, password)
+    VALUES ('Nevkiw', '64564');
 
     -- Populate dummy songs
-    INSERT INTO songs (songname, artist, cover)
-    VALUES ('Anaconda', 'Nicki Minaj', 'images/song.png');
-    INSERT INTO songs (songname, artist, cover)
-    VALUES ('Side by Side', 'Ariana Grande', 'images/song1.png');
-    INSERT INTO songs (songname, artist, cover)
-    VALUES ('Lemon', '米津玄師', 'images/song1.png');
-    INSERT INTO songs (songname, artist, cover)
-    VALUES ('Night Dancer', 'Imase', 'images/song.png');
+    INSERT INTO songs (songname, artist)
+    VALUES ('Anaconda', 'Nicki Minaj');
+    INSERT INTO songs (songname, artist)
+    VALUES ('Side by Side', 'Ariana Grande');
+    INSERT INTO songs (songname, artist)
+    VALUES ('Lemon', '米津玄師');
+    INSERT INTO songs (songname, artist)
+    VALUES ('Night Dancer', 'Imase');
 
     -- Populate dummy friends
     INSERT INTO friends (user1_id, user2_id)
@@ -106,14 +107,14 @@ const dataSql = `
     VALUES (4, 5);
 
     -- Populate dummy timelines
-    INSERT INTO timelines (user_id, song_id, timestamp)
-    VALUES (1, 2, 50000);
-    INSERT INTO timelines (user_id, song_id, timestamp)
-    VALUES (2, 1, 52000);
-    INSERT INTO timelines (user_id, song_id, timestamp)
-    VALUES (1, 3, 54000);
-    INSERT INTO timelines (user_id, song_id, timestamp)
-    VALUES (3, 1, 58000);
+    INSERT INTO timelines (user_id, song_id, ts)
+    VALUES (1, 2, 1687102491);
+    INSERT INTO timelines (user_id, song_id, ts)
+    VALUES (2, 1, 1687102491);
+    INSERT INTO timelines (user_id, song_id, ts)
+    VALUES (1, 3, 1687102491);
+    INSERT INTO timelines (user_id, song_id, ts)
+    VALUES (3, 1, 1687102491);
 
     -- Populate dummy playlists
     INSERT INTO playlists (playlistname)
@@ -129,7 +130,7 @@ const dataSql = `
     INSERT INTO playlists_owners (playlist_id, user_id)
     VALUES (2, 3);
 
-    -- Populate dummy playlists_songss
+    -- Populate dummy playlists_songs
     INSERT INTO playlists_songs (playlist_id, song_id)
     VALUES (1, 1);
     INSERT INTO playlists_songs (playlist_id, song_id)
@@ -139,11 +140,11 @@ const dataSql = `
     INSERT INTO playlists_songs (playlist_id, song_id)
     VALUES (2, 4);
 
-    -- Populate dummy story
-    INSERT INTO story (user_id, song_id)
-    VALUES (2, 1);
-    INSERT INTO story (user_id, song_id)
-    VALUES (3, 2);
+    -- Populate dummy stories
+    INSERT INTO stories (user_id, song_id, ts)
+    VALUES (2, 1, 1687102491);
+    INSERT INTO stories (user_id, song_id, ts)
+    VALUES (3, 2, 1687102491);
 `;
 
 db.none(schemaSql)
