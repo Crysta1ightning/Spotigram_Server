@@ -138,10 +138,10 @@ const dataSql = `
     INSERT INTO playlists_songs (playlist_id, song_id)
     VALUES (2, 4);
 
-    -- Populate dummy playlists_songss
-    INSERT INTO playlists_songs (user_id, song_id)
+    -- Populate dummy story
+    INSERT INTO story (user_id, song_id)
     VALUES (2, 1);
-    INSERT INTO playlists_songs (user_id, song_id)
+    INSERT INTO story (user_id, song_id)
     VALUES (3, 2);
 `;
 
