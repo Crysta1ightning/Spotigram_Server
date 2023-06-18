@@ -31,7 +31,8 @@ const schemaSql = `
     CREATE TABLE songs (
         song_id              serial PRIMARY KEY NOT NULL,
         songname             text NOT NULL,
-        artist               text NOT NULL
+        artist               text NOT NULL,
+        cover                text NOT NULL
     );
 
     CREATE TABLE friends (
@@ -85,14 +86,14 @@ const dataSql = `
     VALUES ('Nevkiw', '64564', 'images/user_pfp1.jpg');
 
     -- Populate dummy songs
-    INSERT INTO songs (songname, artist)
-    VALUES ('Anaconda', 'Nicki Minaj');
-    INSERT INTO songs (songname, artist)
-    VALUES ('Side by Side', 'Ariana Grande');
-    INSERT INTO songs (songname, artist)
-    VALUES ('Lemon', '米津玄師');
-    INSERT INTO songs (songname, artist)
-    VALUES ('Night Dancer', 'Imase');
+    INSERT INTO songs (songname, artist, cover)
+    VALUES ('Anaconda', 'Nicki Minaj', 'images/song.png');
+    INSERT INTO songs (songname, artist, cover)
+    VALUES ('Side by Side', 'Ariana Grande', 'images/song1.png');
+    INSERT INTO songs (songname, artist, cover)
+    VALUES ('Lemon', '米津玄師', 'images/song1.png');
+    INSERT INTO songs (songname, artist, cover)
+    VALUES ('Night Dancer', 'Imase', 'images/song.png');
 
     -- Populate dummy friends
     INSERT INTO friends (user1_id, user2_id)
