@@ -18,18 +18,21 @@ const schemaSql = `
     DROP TABLE IF EXISTS playlists;
     DROP TABLE IF EXISTS playlists_owners;
     DROP TABLE IF EXISTS playlists_songs;
+    DROP TABLE IF EXISTS story;
 
     -- Create
     CREATE TABLE users (
         user_id              serial PRIMARY KEY NOT NULL,
         username             text NOT NULL,
-        password             text NOT NULL
+        password             text NOT NULL,
+        profile_pic          text NOT NULL
     );
 
     CREATE TABLE songs (
         song_id              serial PRIMARY KEY NOT NULL,
         songname             text NOT NULL,
-        artist               text NOT NULL
+        artist               text NOT NULL,
+        cover                text NOT NULL
     );
 
     CREATE TABLE friends (
@@ -61,30 +64,36 @@ const schemaSql = `
         playlist_id          integer NOT NULL,
         song_id              integer NOT NULL
     );
+
+    CREATE TABLE story (
+        stories_id           serial PRIMARY KEY NOT NULL,
+        user_id              integer NOT NULL,
+        song_id              integer NOT NULL
+    );
 `;
 
 const dataSql = `
     -- Populate dummy users
-    INSERT INTO users (username, password)
-    VALUES ('Crystal', '0000');
-    INSERT INTO users (username, password)
-    VALUES ('Kelvin', '1234');
-    INSERT INTO users (username, password)
-    VALUES ('li3', '1133');
-    INSERT INTO users (username, password)
-    VALUES ('Cody', '7777');
-    INSERT INTO users (username, password)
-    VALUES ('Nevkiw', '64564');
+    INSERT INTO users (username, password, profile_pic)
+    VALUES ('Crystal', '0000', 'images/user_pfp1.jpg');
+    INSERT INTO users (username, password, profile_pic)
+    VALUES ('Kelvin', '1234', 'images/user_pfp1.jpg');
+    INSERT INTO users (username, password, profile_pic)
+    VALUES ('li3', '1133', 'images/user_pfp1.jpg');
+    INSERT INTO users (username, password, profile_pic)
+    VALUES ('Cody', '7777', 'images/user_pfp1.jpg');
+    INSERT INTO users (username, password, profile_pic)
+    VALUES ('Nevkiw', '64564', 'images/user_pfp1.jpg');
 
     -- Populate dummy songs
-    INSERT INTO songs (songname, artist)
-    VALUES ('Anaconda', 'Nicki Minaj');
-    INSERT INTO songs (songname, artist)
-    VALUES ('Side by Side', 'Ariana Grande');
-    INSERT INTO songs (songname, artist)
-    VALUES ('Lemon', '米津玄師');
-    INSERT INTO songs (songname, artist)
-    VALUES ('Night Dancer', 'Imase');
+    INSERT INTO songs (songname, artist, cover)
+    VALUES ('Anaconda', 'Nicki Minaj', 'images/song.png');
+    INSERT INTO songs (songname, artist, cover)
+    VALUES ('Side by Side', 'Ariana Grande', 'images/song1.png');
+    INSERT INTO songs (songname, artist, cover)
+    VALUES ('Lemon', '米津玄師', 'images/song1.png');
+    INSERT INTO songs (songname, artist, cover)
+    VALUES ('Night Dancer', 'Imase', 'images/song.png');
 
     -- Populate dummy friends
     INSERT INTO friends (user1_id, user2_id)
@@ -129,6 +138,12 @@ const dataSql = `
     VALUES (2, 3);
     INSERT INTO playlists_songs (playlist_id, song_id)
     VALUES (2, 4);
+
+    -- Populate dummy story
+    INSERT INTO story (user_id, song_id)
+    VALUES (2, 1);
+    INSERT INTO story (user_id, song_id)
+    VALUES (3, 2);
 `;
 
 db.none(schemaSql)
