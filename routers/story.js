@@ -10,9 +10,9 @@ router.use(express.json());
 
 // List
 router.get('/', function (req, res, next) {
-  const {searchtext} = req.query;
+  const {user_id} = req.query;
   storyModel
-    .list(searchtext)
+    .list(user_id)
     .then((story) => {
       res.json(story);
     })
