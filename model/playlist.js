@@ -14,7 +14,7 @@ if (!global.db) {
   
   function create(playlistname) {
     const sql = `
-          INSERT INTO users (playlistname)
+          INSERT INTO playlists (playlistname)
           VALUES ($<playlistname>)
           RETURNING *
       `;
