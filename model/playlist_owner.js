@@ -17,7 +17,7 @@ function list(playlist_id) {
 
 function create(playlist_id_id, user_id) {
     const sql = `
-          INSERT INTO playlists_owners (plyalist_id, user_id)
+          INSERT INTO playlists_owners (playlist_id, user_id)
           VALUES ($<playlist_id>, $<user_id>)
           RETURNING *
       `;
