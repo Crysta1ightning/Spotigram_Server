@@ -115,6 +115,14 @@ const dataSql = `
     VALUES (1, 3, 1687102491);
     INSERT INTO timelines (user_id, song_id, ts)
     VALUES (3, 1, 1687102491);
+    INSERT INTO timelines (user_id, song_id, ts)
+    VALUES (1, 1, 1687102491);
+    INSERT INTO timelines (user_id, song_id, ts)
+    VALUES (2, 3, 1687102491);
+    INSERT INTO timelines (user_id, song_id, ts)
+    VALUES (3, 2, 1687102491);
+    INSERT INTO timelines (user_id, song_id, ts)
+    VALUES (3, 3, 1687102491);
 
     -- Populate dummy playlists
     INSERT INTO playlists (playlistname)

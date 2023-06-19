@@ -13,14 +13,27 @@ function list() {
   return db.any(sql);
 }
 
-function create(user_id, song_id) {
+async function create(user_id, song_id) {
   const ts = moment().valueOf()/1000;
-  const sql = `
-        INSERT INTO stories (user_id, song_id, ts)
-        VALUES ($<user_id>, $<song_id>, ${ts})
-        RETURNING *
+  let sql = `
+        SELECT * FROM stories 
+        WHERE user_id = $<user_id>
     `;
-  return db.one(sql, {user_id, song_id});
+  db.one(sql, {user_id}).then((story) => {
+    let sql = `
+      UPDATE stories
+      SET song_id = $<song_id>, ts = ${ts}
+      WHERE user_id = $<user_id>
+    `
+    return db.any(sql, {user_id, song_id});
+  }).catch((error) => {
+    let sql = `
+      INSERT INTO stories (user_id, song_id, ts)
+      VALUES ($<user_id>, $<song_id>, ${ts})
+      RETURNING *
+    `;
+    return db.one(sql, {user_id, song_id});
+  })
 }
 
 function refresh() {
