@@ -90,7 +90,7 @@ const dataSql = `
     INSERT INTO songs (songname, artist)
     VALUES ('Anaconda', 'Nicki Minaj');
     INSERT INTO songs (songname, artist)
-    VALUES ('Side by Side', 'Ariana Grande');
+    VALUES ('Side to Side', 'Ariana Grande');
     INSERT INTO songs (songname, artist)
     VALUES ('Lemon', '米津玄師');
     INSERT INTO songs (songname, artist)
@@ -150,9 +150,11 @@ const dataSql = `
 
     -- Populate dummy stories
     INSERT INTO stories (user_id, song_id, ts)
+    VALUES (4, 1, 1685102491);
+    INSERT INTO stories (user_id, song_id, ts)
     VALUES (2, 1, 1687102491);
     INSERT INTO stories (user_id, song_id, ts)
-    VALUES (3, 2, 1687102491);
+    VALUES (3, 2, 1687150157);
 `;
 
 db.none(schemaSql)
