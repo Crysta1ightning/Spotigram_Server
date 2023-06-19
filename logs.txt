@@ -399,3 +399,227 @@
     at readableAddChunk (node:internal/streams/readable:289:9)
     at Socket.Readable.push (node:internal/streams/readable:228:10)
     at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+1687146427 ERROR  error: syntax error at or near "IF"
+    at Parser.parseErrorMessage (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\parser.js:287:98)
+    at Parser.handlePacket (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\parser.js:126:29)
+    at Parser.parse (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\parser.js:39:38)
+    at Socket.<anonymous> (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+1687146489 ERROR  error: syntax error at or near "IF"
+    at Parser.parseErrorMessage (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\parser.js:287:98)
+    at Parser.handlePacket (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\parser.js:126:29)
+    at Parser.parse (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\parser.js:39:38)
+    at Socket.<anonymous> (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+1687146688 ERROR  error: syntax error at or near "IF"
+    at Parser.parseErrorMessage (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\parser.js:287:98)
+    at Parser.handlePacket (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\parser.js:126:29)
+    at Parser.parse (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\parser.js:39:38)
+    at Socket.<anonymous> (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+1687146698 ERROR  error: syntax error at or near "IF"
+    at Parser.parseErrorMessage (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\parser.js:287:98)
+    at Parser.handlePacket (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\parser.js:126:29)
+    at Parser.parse (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\parser.js:39:38)
+    at Socket.<anonymous> (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+1687146710 ERROR  error: syntax error at or near "IF"
+    at Parser.parseErrorMessage (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\parser.js:287:98)
+    at Parser.handlePacket (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\parser.js:126:29)
+    at Parser.parse (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\parser.js:39:38)
+    at Socket.<anonymous> (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+1687146720 ERROR  error: syntax error at or near "IF"
+    at Parser.parseErrorMessage (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\parser.js:287:98)
+    at Parser.handlePacket (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\parser.js:126:29)
+    at Parser.parse (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\parser.js:39:38)
+    at Socket.<anonymous> (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+1687146851 ERROR  error: syntax error at or near "INSERT"
+    at Parser.parseErrorMessage (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\parser.js:287:98)
+    at Parser.handlePacket (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\parser.js:126:29)
+    at Parser.parse (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\parser.js:39:38)
+    at Socket.<anonymous> (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
+1687146861 ERROR  QueryResultError: No data returned from the query.
+    at Query.callback (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-promise\lib\query.js:217:41)
+    at Query.handleReadyForQuery (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg\lib\query.js:139:14)
+    at Client._handleReadyForQuery (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg\lib\client.js:312:19)
+    at Connection.emit (node:events:390:28)
+    at C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg\lib\connection.js:117:12
+    at Parser.parse (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\parser.js:40:17)
+    at Socket.<anonymous> (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+1687147016 ERROR  QueryResultError: No data returned from the query.
+    at Query.callback (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-promise\lib\query.js:217:41)
+    at Query.handleReadyForQuery (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg\lib\query.js:139:14)
+    at Client._handleReadyForQuery (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg\lib\client.js:312:19)
+    at Connection.emit (node:events:390:28)
+    at C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg\lib\connection.js:117:12
+    at Parser.parse (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\parser.js:40:17)
+    at Socket.<anonymous> (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+1687147320 ERROR  TypeError: Cannot read properties of undefined (reading 'then')
+    at C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\routers\story.js:30:5
+    at Layer.handle [as handle_request] (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\index.js:280:10)
+    at C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:199:9)
+1687147628 ERROR  TypeError: Cannot read properties of undefined (reading 'then')
+    at C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\routers\story.js:30:5
+    at Layer.handle [as handle_request] (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\index.js:280:10)
+    at C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:199:9)
+1687147645 ERROR  TypeError: Cannot read properties of undefined (reading 'then')
+    at C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\routers\story.js:30:5
+    at Layer.handle [as handle_request] (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\index.js:280:10)
+    at C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:199:9)
+1687147655 ERROR  TypeError: Cannot read properties of undefined (reading 'then')
+    at C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\routers\story.js:30:5
+    at Layer.handle [as handle_request] (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\index.js:280:10)
+    at C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:199:9)
+1687147714 ERROR  TypeError: Cannot read properties of undefined (reading 'then')
+    at C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\routers\story.js:30:5
+    at Layer.handle [as handle_request] (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\index.js:280:10)
+    at C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:199:9)
+1687147787 ERROR  TypeError: Cannot read properties of undefined (reading 'then')
+    at C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\routers\story.js:30:5
+    at Layer.handle [as handle_request] (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\index.js:280:10)
+    at C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:199:9)
+1687147835 ERROR  TypeError: Cannot read properties of undefined (reading 'then')
+    at C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\routers\story.js:30:5
+    at Layer.handle [as handle_request] (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\index.js:280:10)
+    at C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:199:9)
+1687147880 ERROR  TypeError: Cannot read properties of undefined (reading 'then')
+    at C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\routers\story.js:30:5
+    at Layer.handle [as handle_request] (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\index.js:280:10)
+    at C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:199:9)
+1687147893 ERROR  TypeError: Cannot read properties of undefined (reading 'then')
+    at C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\routers\story.js:30:5
+    at Layer.handle [as handle_request] (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\index.js:280:10)
+    at C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:199:9)
+1687147972 ERROR  TypeError: Cannot read properties of undefined (reading 'then')
+    at C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\routers\story.js:30:5
+    at Layer.handle [as handle_request] (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\lib\router\index.js:280:10)
+    at C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\express\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:199:9)
+1687148085 ERROR  QueryResultError: Multiple rows were not expected.
+    at Query.<anonymous> (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-promise\lib\query.js:197:41)
+    at Query.handleReadyForQuery (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg\lib\query.js:139:14)
+    at Client._handleReadyForQuery (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg\lib\client.js:312:19)
+    at Connection.emit (node:events:390:28)
+    at C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg\lib\connection.js:117:12
+    at Parser.parse (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\parser.js:40:17)
+    at Socket.<anonymous> (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+1687148144 ERROR  QueryResultError: No data returned from the query.
+    at Query.<anonymous> (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-promise\lib\query.js:217:41)
+    at Query.handleReadyForQuery (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg\lib\query.js:139:14)
+    at Client._handleReadyForQuery (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg\lib\client.js:312:19)
+    at Connection.emit (node:events:390:28)
+    at C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg\lib\connection.js:117:12
+    at Parser.parse (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\parser.js:40:17)
+    at Socket.<anonymous> (C:\Users\USER\OneDrive - NTHU\CODING\Courses\Software-Studio\Spotigram\server\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:390:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
