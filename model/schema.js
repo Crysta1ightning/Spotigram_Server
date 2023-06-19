@@ -173,6 +173,8 @@ const dataSql = `
     INSERT INTO playlists_songs (playlist_id, song_id)
     VALUES (1, 2);
     INSERT INTO playlists_songs (playlist_id, song_id)
+    VALUES (1, 3);
+    INSERT INTO playlists_songs (playlist_id, song_id)
     VALUES (2, 3);
     INSERT INTO playlists_songs (playlist_id, song_id)
     VALUES (2, 4);
@@ -180,6 +182,10 @@ const dataSql = `
     VALUES (3, 1);
     INSERT INTO playlists_songs (playlist_id, song_id)
     VALUES (3, 2);
+    INSERT INTO playlists_songs (playlist_id, song_id)
+    VALUES (3, 3);
+    INSERT INTO playlists_songs (playlist_id, song_id)
+    VALUES (3, 4);
     INSERT INTO playlists_songs (playlist_id, song_id)
     VALUES (4, 3);
     INSERT INTO playlists_songs (playlist_id, song_id)
