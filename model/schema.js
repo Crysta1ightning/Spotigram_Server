@@ -129,6 +129,19 @@ const dataSql = `
     VALUES ('西洋音樂');
     INSERT INTO playlists (playlistname)
     VALUES ('東洋音樂');
+    INSERT INTO playlists (playlistname)
+    VALUES ('JPOP');
+    INSERT INTO playlists (playlistname)
+    VALUES ('KPOP');
+    INSERT INTO playlists (playlistname)
+    VALUES ('獨立音樂');
+    INSERT INTO playlists (playlistname)
+    VALUES ('2022 Recall');
+    INSERT INTO playlists (playlistname)
+    VALUES ('古典音樂');
+    INSERT INTO playlists (playlistname)
+    VALUES ('新詩賞析');
+
     
     -- Populate dummy playlists_owners
     INSERT INTO playlists_owners (playlist_id, user_id)
@@ -137,6 +150,22 @@ const dataSql = `
     VALUES (1, 2);
     INSERT INTO playlists_owners (playlist_id, user_id)
     VALUES (2, 3);
+    INSERT INTO playlists_owners (playlist_id, user_id)
+    VALUES (3, 1);
+    INSERT INTO playlists_owners (playlist_id, user_id)
+    VALUES (3, 2);
+    INSERT INTO playlists_owners (playlist_id, user_id)
+    VALUES (3, 3);
+    INSERT INTO playlists_owners (playlist_id, user_id)
+    VALUES (4, 3);
+    INSERT INTO playlists_owners (playlist_id, user_id)
+    VALUES (5, 3);
+    INSERT INTO playlists_owners (playlist_id, user_id)
+    VALUES (6, 3);
+    INSERT INTO playlists_owners (playlist_id, user_id)
+    VALUES (7, 3);
+    INSERT INTO playlists_owners (playlist_id, user_id)
+    VALUES (8, 3);
 
     -- Populate dummy playlists_songs
     INSERT INTO playlists_songs (playlist_id, song_id)
@@ -147,6 +176,30 @@ const dataSql = `
     VALUES (2, 3);
     INSERT INTO playlists_songs (playlist_id, song_id)
     VALUES (2, 4);
+    INSERT INTO playlists_songs (playlist_id, song_id)
+    VALUES (3, 1);
+    INSERT INTO playlists_songs (playlist_id, song_id)
+    VALUES (3, 2);
+    INSERT INTO playlists_songs (playlist_id, song_id)
+    VALUES (4, 3);
+    INSERT INTO playlists_songs (playlist_id, song_id)
+    VALUES (4, 4);
+    INSERT INTO playlists_songs (playlist_id, song_id)
+    VALUES (5, 1);
+    INSERT INTO playlists_songs (playlist_id, song_id)
+    VALUES (5, 3);
+    INSERT INTO playlists_songs (playlist_id, song_id)
+    VALUES (6, 2);
+    INSERT INTO playlists_songs (playlist_id, song_id)
+    VALUES (6, 4);
+    INSERT INTO playlists_songs (playlist_id, song_id)
+    VALUES (7, 1);
+    INSERT INTO playlists_songs (playlist_id, song_id)
+    VALUES (7, 3);
+    INSERT INTO playlists_songs (playlist_id, song_id)
+    VALUES (8, 2);
+    INSERT INTO playlists_songs (playlist_id, song_id)
+    VALUES (8, 4);
 
     -- Populate dummy stories
     INSERT INTO stories (user_id, song_id, ts)
