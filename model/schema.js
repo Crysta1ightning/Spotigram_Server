@@ -90,7 +90,7 @@ const dataSql = `
     INSERT INTO songs (songname, artist)
     VALUES ('Anaconda', 'Nicki Minaj');
     INSERT INTO songs (songname, artist)
-    VALUES ('Side by Side', 'Ariana Grande');
+    VALUES ('Side to Side', 'Ariana Grande');
     INSERT INTO songs (songname, artist)
     VALUES ('Lemon', '米津玄師');
     INSERT INTO songs (songname, artist)
